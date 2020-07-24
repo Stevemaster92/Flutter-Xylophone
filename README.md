@@ -4,6 +4,6 @@ This project is based on the [stub project](https://github.com/londonappbrewery/
 
 ## What you can do
 
-This music app plays Xylophone sounds will let you unleash your musical talent where ever you are. 
+This music app plays Xylophone sounds and will let you unleash your musical talent where ever you are. 
 
-![Finished App](https://github.com/londonappbrewery/Images/blob/master/xylophone-flutter.png)
+<img src="https://github.com/Stevemaster92/flutter-xylophone/blob/master/images/xylophone.png" alt="xylophone" height="734"/>

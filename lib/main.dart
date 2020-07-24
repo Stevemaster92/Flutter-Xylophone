@@ -24,37 +24,27 @@ class XylophoneApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: createXylophone(),
+            children: [1, 2, 3, 4, 5, 6, 7].map(createKey).toList(),
           ),
         ),
       ),
     );
   }
 
-  List<Widget> createXylophone() {
-    List<Widget> keys = new List();
-
-    for (int i = 0; i < 7; i++) {
-      keys.add(createKey(i));
-    }
-
-    return keys;
-  }
-
-  Widget createKey(int i) => Expanded(
+  Widget createKey(int num) => Expanded(
         child: FlatButton(
           onPressed: () {
-            player.play('note${i + 1}.wav');
+            player.play('note$num.wav');
           },
           child: Text(
-            scale[i],
+            scale[num - 1],
             style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
               color: Colors.black45,
             ),
           ),
-          color: colors[i],
+          color: colors[num - 1],
         ),
       );
 }
